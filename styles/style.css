@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Urbanist", sans-serif;
+}
+
+header,
+main,
+a {
+  color: #eee;
+  text-decoration: none;
+}
+
+body {
+  background-color: #201f1f;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  display: inline-block;
+  margin: 20px;
+}
+
+#title {
+  flex-direction: column;
+  line-height: 10px;
+}
+
+h1 {
+  font-weight: 200;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+h2 {
+  font-size: 56px;
+  line-height: 10px;
+}
+
+#title001 {
+  color: #8a2be2;
+}
+
+p {
+  line-height: 20px;
+  max-width: 400px;
+  font-weight: 200;
+}
+
+img {
+  width: 500px;  
+}
+
+a:hover {
+  color: #8a2be2;
+  transition: 0.7s;
+}
+
+#inscrevase-btn {
+  border: 2px solid #8a2be2;
+  border-radius: 10px;
+  padding: 5px;
+}
+#inscrevase-btn:hover {
+  color: #eee;
+  box-shadow: 0 0 10px 0 #c063f7 inset, 0 0 10px 4px #e68fda;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+form [type="submit"] {
+  height: 50px;
+  width: 50%;
+  background-color: #55147a;
+  color: #eee;
+  font-weight: bold;
+}
+
+form [type="submit"]:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 #c063f7 inset, 0 0 10px 4px #e68fda;
+  transition: 0.7s;
+}
+
+input {
+  margin-top: 20px;
+  height: 20px;
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+}
+
+
+@media screen and (max-width: 760px) {
+   header {
+    flex-direction: column;
+   }
+
+   main {
+    flex-direction: column;    
+   }
+
+   h2 {
+    font-size: 30px;
+   }
+   
+   form {
+    margin: 0 auto;
+    width: 100%;
+   }
+
+   input {
+    align-self: auto;
+   }
+
+   img {
+    display: none;
+   }
+
+   ul {
+    text-align: center;
+   }
+}
