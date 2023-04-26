@@ -6,43 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="styles/style.css">
-    <title>Landing Page</title>
+    <title>E-Book</title>
 </head>
 <body>
     <header>
         <div id="title">
-            <h1>IPTV</h1>
-            <h1>Diego</h1>
+            <h1>E-Book</h1>
+            <h1>Segredos do primeiro emprego como <span>front-end</span></h1>
         </div>
-
         <ul>
-            <a href="#"><li>Inicio</li></a>
-            <a href="#"><li>Sobre</li></a>
-            <a href="#"><li>Serviços</li></a>
-            <a href="#"><li>Contato</li></a>
-            <a href="#" id="inscrevase-btn"><li>Já tem uma conta?</li></a>
+            <a onclick="return false;" href="https://pay.hotmart.com/A80211908F?checkoutMode=2" class="hotmart-fb" id="inscrevase-btn"><li>Adquirir E-Book</li></a>
         </ul>
     </header>
-
+    <section>
+        <div>
+            <a  target="_blank" href="https://hotmart.com/pt-br/marketplace/produtos/segredos-do-primeiro-emprego-como-front-end/A80211908F"  class="learn-more-btn">Saiba mais</a>
+        </div>
+    </section>
     <main>
         <aside>
-            <h2 id="title001">Contrate</h2>
-            <h2>Agora Sua IPTV</h2>
-            <p>A melhor e mais completa lista IPTV
-                Pariatur Lorem do eiusmod ea velit 
-                laborum quis ipsum quis sunt 
-                incididunt culpa officia.
+            <h2 id="title001">Garanta</h2>
+            <h2>Agora seu E-Book</h2>
+            <button onclick="return false;" href="https://pay.hotmart.com/A80211908F?checkoutMode=2" class="hotmart-fb buy-btn">Adquirir E-Book</button> 
+            <p>Neste e-book irei abordar o caminho que eu, Elias Braga, segui para conseguir minha primeira oportunidade na área após 6 meses de estudos. Comecei sem saber absolutamente de nada e foquei em estudar o que as empresas exigiam. Irei descrever o caminho que segui, o que estudei, mas com uns upgrades.
+            Os passos são focados na carreira front-end, que é a que trabalho hoje!
+            Neste material você irá encontrar os principais conteúdos para estudar, o que as empresas pedem que você saiba, dicas de como estudar, como ter um linkedIn de qualidade e como se preparar para uma entrevista de emprego. Todos os passos que fiz, e que colegas da área fizeram para conseguir a primeira oportunidade você irá encontrar neste material. Cada tópica é acompanhando com links de apoio, artigos, videos e minicursos.
             </p>
-            <form action="">
-                <input type="text" placeholder="Nome">
-                <input type="email" placeholder="E-mail">
-                <input type="submit" value="Enviar">
-            </form>
         </aside>
-
         <article>
-            <img src="components/images/tvtvtv.png" alt="woman">
+            <img src="components/images/capa-ebook.jpg" alt="capa do ebook">
         </article>
     </main>
+
+    <script type="text/javascript">
+        function importHotmart(){ 
+             var imported = document.createElement('script'); 
+             imported.src = 'https://static.hotmart.com/checkout/widget.min.js'; 
+             document.head.appendChild(imported); 
+            var link = document.createElement('link'); 
+            link.rel = 'stylesheet'; 
+            link.type = 'text/css'; 
+            link.href = 'https://static.hotmart.com/css/hotmart-fb.min.css'; 
+            document.head.appendChild(link);	} 
+         importHotmart(); 
+     </script> 
 </body>
 </html>
